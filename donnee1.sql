@@ -9,3 +9,6 @@ CREATE TABLE film (
     genre VARCHAR(50)
 );
 
+INSERT INTO film 
+VALUES (1, 'La famille Adams' ,1991, "Ils sont étranges, mystérieux et terrifiants. C'est la famille Addams. Une famille aux penchants morbides qui pense pourtant être tout à fait normale ! ",8, 'horreur')
+SELECT * FROM FILM 
