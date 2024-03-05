@@ -10,5 +10,5 @@ CREATE TABLE film (
 );
 
 INSERT INTO film 
-VALUES (1, 'La famille Adams' ,1991, "Ils sont étranges, mystérieux et terrifiants. C'est la famille Addams. Une famille aux penchants morbides qui pense pourtant être tout à fait normale ! ",8, 'horreur')
-SELECT * FROM FILM 
+VALUES (1, 'La famille Adams' ,1991, "Ils sont étranges, mystérieux et terrifiants. C'est la famille Addams. Une famille aux penchants morbides qui pense pourtant être tout à fait normale ! ",8, 'horreur');
+SELECT * FROM film ORDER BY note DESC;
