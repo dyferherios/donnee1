@@ -12,6 +12,7 @@ CREATE TABLE film (
 INSERT INTO film 
 VALUES (1, 'La famille Adams' ,1991, "Ils sont étranges, mystérieux et terrifiants. C'est la famille Addams. Une famille aux penchants morbides qui pense pourtant être tout à fait normale ! ",8, 'horreur');
 SELECT * FROM film ORDER BY note DESC;
+SELECT * FROM film WHERE note>=5 AND note<=10;
 
 CREATE TABLE actor (
     name VARCHAR(50),
@@ -20,3 +21,13 @@ CREATE TABLE actor (
     address VARCHAR(),
     contact int(9)
 )
+
+UPDATE film SET titre="Fureur de vaincre", note=10 WHERE code=1;
+
+\d nom_de_la_table : afficher la nom_de_la_table
+ALTER TABLE table_name ALTER TABLE COLUMN column_name [SET DATA] TYPE new_type;
+
+
+UPDATE film SET note=3 WHERE code=1; mettre à jour une valeur dans un table
+
+SELECT * FROM film WHERE titre LIKE 'The%'; afficher les titres commençant pas 'the'
