@@ -30,4 +30,35 @@ ALTER TABLE table_name ALTER TABLE COLUMN column_name [SET DATA] TYPE new_type;
 
 UPDATE film SET note=3 WHERE code=1; mettre à jour une valeur dans un table
 
-SELECT * FROM film WHERE titre LIKE 'The%'; afficher les titres commençant pas 'the'
+SELECT * FROM film WHERE titre LIKE 'The%'; afficher les titres commençant pas 'the';
+
+Get help:
+
+=> \help
+
+List all databases:
+
+=> \l
+
+Connect to a particular database:
+
+=> \c database
+
+List all users and their permission levels:
+
+=> \du
+
+Show summary information about all tables in the current database:
+
+=> \dt
+
+Exit/quit the psql shell:
+
+=> \q
+
+or press Ctrl+d.
+
+There are of course many more meta-commands, but these should help you get started. To see all meta-commands run:
+
+=> \?
+
